@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap');
+
+.ff_inter {
+    font-family: 'Inter';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ff_anton {
+    font-family: 'Anton';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg_img {
+    background-image: url(./assets/image/png/hero.png);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.section3_img {
+    background-image: url(./assets/image/png/bg_img.png);
+    background-size: 100% 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.bg_bular {
+    background: rgba(255, 255, 255, 0.10);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn_color,
+.bg_color1 {
+    background: var(--linear, linear-gradient(307deg, #51C8EF -13.72%, #7AF57A 102.02%));
+}
+
+.btn_color:hover {
+    background: var(--linear, linear-gradient(309deg, #509bb4 -13.72%, #abadab 102.02%));
+}
+
+/* .bg_shadow1 {
+    fill: radial-gradient(51.68% 48.51% at 50.39% 55.02%, #B8B8B8 0%, #BCBCBC 23%, #C9C9C9 47%, #DEDEDE 72%, #FCFCFC 98%, #FFF 100%);
+    background-blend-mode: multiply !important;
+    mix-blend-mode: multiply !important;
+    flex-shrink: 0;
+} */
+
+.circle {
+    background: rgba(122, 245, 122, 0.08);
+}
+
+.btn_hov {
+    background: rgba(0, 0, 0, 0.72) 100%;
+}
+
+.box_shadow {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%);
+    box-shadow: 7px 9px 15px 0px rgba(0, 0, 0, 0.20);
+}
+
+.bg_img1 {
+    background-image: url(./assets/image/png/bg_img1.png);
+}
+
+.bg_img2 {
+    background-image: url(./assets/image/png/bg_img2.png);
+    background-size: 100% 100%;
+}
+
+.bg-img {
+    background-image: url(./assets/image/png/img.png);
+}
+
+.navline {
+    content: '';
+}
+
+.accordion:has(input:checked) .accordion-content {
+    display: block;
+}
+
+.accordion-title::after,
+.accordion-title::before {
+    content: "";
+    display: block;
+    width: .15em;
+    height: .75em;
+    background: #D9D9D9;
+    position: absolute;
+    right: 1.25em;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.accordion-title::before {
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.accordion:has(input:checked) .accordion-title::before {
+    opacity: 0;
+}
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+
+@media (min-width:1024px) {
+    .container {
+        max-width: 1140px;
+    }
 }
